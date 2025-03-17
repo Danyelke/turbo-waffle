@@ -8,12 +8,14 @@ def roll():
     return roll
 
 while True:
-    players = input("Enter the number of players (1-4): ")
+    players = input("Enter the number of players (2 - 4): ")
     if players.isdigit():
         players = int(players)
-        if 1 <= players <= 4:
+        if 2 <= players <= 4:
             break
+        else:
+            print("read that again")
     else:
-        print("read that again")
+        print("nummmber please")
 
 print(players)
